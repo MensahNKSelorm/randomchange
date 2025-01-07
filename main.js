@@ -11,3 +11,8 @@ function changeBackground() {
 }
 
 button.addEventListener('click', changeBackground);
+document.addEventListener('keydown', (event) => {
+    if (event.key === ' ') {
+        body.style.backgroundColor = changeBackground().randomColor;
+    }
+})
